@@ -1,0 +1,15 @@
+<% @start_time %>
+<div class="container text-center">
+  <div class="col-xs-4 col-xs-offset-4">
+    <div class="form">
+      <h1>LongestWord game</h1>
+      <p id='grid'><%= @grid %></p>
+      <form action="/score" method="get">
+        <label for="question"> Type your word</label>
+        <input type="text" id='question' class='form-control' name='answer' placeholder="Here">
+        <input type="submit" value="Let's play" class='btn btn-danger'>
+        <input type="hidden" name="<% @end_time %>">
+      </form>
+    </div>
+  </div>
+</div>
